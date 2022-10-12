@@ -1,0 +1,67 @@
+.modal_overlay{
+    position: fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.75);
+    display:grid;
+    place-content: center;
+}
+
+.modal_overlay .modal_content {
+    background: #fff;
+    width: 509px;
+    height: 408px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal_overlay .modal_content .icon_container img{
+    width: 96px;
+    height: 96px;
+}
+
+.modal_overlay .modal_content .success_details{
+    width: 230px;
+    height: 40px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: -1rem;
+    text-align: center;
+    color: #21334F;
+}
+
+.modal_overlay .modal_content .btn_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px 10px 8px;
+    width: 343px;
+    height: 44px;
+    background: rgba(226, 0, 16, 0.05);
+}
+
+.modal_overlay .modal_content .btn_container .done_btn{
+    width: 36px;
+    height: 17px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #DE3D6D;
+    border: none;
+    text-transform: capitalize;
+    cursor: pointer;  
+    opacity: 0.85; 
+}
+
+.modal_overlay .modal_content .btn_container .done_btn{
+    opacity: 1; 
+}

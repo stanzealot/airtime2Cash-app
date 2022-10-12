@@ -1,0 +1,138 @@
+.rect-container {
+  box-sizing: border-box;
+  width: 1440px;
+  max-width: 90vw;
+  margin: 5vw;
+  position: relative;
+  left: 0;
+  top: 0;
+  background: rgba(255, 242, 235, 0.6);
+  border-radius: 24px;
+  padding-top: 4%;
+  padding-bottom: 12%;
+  overflow: hidden;
+
+  .rect-colors {
+    .ellipse23 {
+      position: absolute;
+      width: 492px;
+      height: 492px;
+      left: 324px;
+      top: 211px;
+      background: #4285F4;
+      filter: blur(350px);
+    }
+
+    .ellipse24 {
+      position: absolute;
+      width: 730px;
+      height: 730px;
+      left: 886px;
+      top: -27px;
+      background: #753FF6;
+      filter: blur(450px);
+    }
+
+    .ellipse25 {
+      position: absolute;
+      width: 508px;
+      height: 508px;
+      left: -254px;
+      top: -228px;
+      background: #80B918;
+      filter: blur(400px);
+    }
+  }
+
+  .rect-text {
+    margin-left: 10%;
+    width: 80%;
+    max-width: 525px;
+
+    .rect-title {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      font-size: clamp(1.7rem, 3vw, 40px);
+      line-height: 1.5em;
+      color: #03435F;
+      max-width: 100%;
+    }
+
+    .rect-description {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      color: #03435F;
+      max-width: 480px;
+    }
+
+    .rect-cta {
+      border: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      gap: 10px;
+      width: 171px;
+      height: 48px;
+      background: linear-gradient(107.45deg, #DE3D6D 47.58%, #F5844C 104.23%);
+      border-radius: 4px;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+      color: #FFFFFF;
+      isolation: isolate;
+    }
+  }
+
+  .rect-graphic {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .rect-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    
+    .rect-graphic {
+      display: block;
+      float: right;
+      clear: left;
+      
+      .mock-frame {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 50%;
+        max-width: 522px;
+        height: 100%;
+
+        .mock-phone {
+          object-fit: contain;
+          position: relative;
+        }
+
+        .mock-screen {
+          position: absolute;
+          width: 120px;
+          height: 56px;
+          left: 156.58px;
+          top: 144.92px;
+          filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.08));
+          transform: rotate(-0.87deg);
+        }
+      }
+    }
+
+    
+  }
+  
+}

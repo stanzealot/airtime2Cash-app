@@ -1,0 +1,36 @@
+.overview-tab {
+  text-align: center;
+
+  .tab-title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(16px, 3.6vw, 32px);
+    line-height: 39px;
+    color: #012A4A;
+    margin-bottom: 32px;
+  }
+
+  .scroll-container {
+    scroll-behavior: smooth;
+    overflow-x: scroll;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+
+    .pending-transactions {
+      width: 100%;
+      min-width: 693px;
+      min-height: 472px;
+      overflow-x: scroll;
+    }
+  }
+
+  .no-pending {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #012A4A;
+    margin-top: 32px;
+  }
+}

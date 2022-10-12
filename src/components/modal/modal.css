@@ -1,0 +1,24 @@
+.btn-div{
+    background: rgba(222, 61, 109, 0.1);
+}
+
+.modal-container {
+    width: 100%;
+    background: #E5E5E5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+} 
+
+.close-modal-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    background: transparent;
+    border-color: transparent;
+    color: rgba(222, 61, 109, 0.1);
+    cursor: pointer;
+} 

@@ -1,0 +1,16 @@
+.buttonComponent {
+  font-family: "Inter";
+  border: none;
+  align-self: stretch;
+  padding: 16.5px 16px;
+  gap: 10px;
+  background: linear-gradient(92.1deg, #DE3D6D 55.67%, #F5844C 101.51%);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+
+  &:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+}

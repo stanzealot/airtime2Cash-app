@@ -1,0 +1,19 @@
+.logoWithTypeface {
+  width: 151px;
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+
+  .violet {
+    color: #DE3D6D;
+  }
+
+  .orange {
+    color: #F5844C
+  }
+}

@@ -1,0 +1,18 @@
+.status {
+  isolation: isolate;
+  z-index: 0;
+  text-transform: capitalize;
+
+  &.confirmed {
+    color: green;
+  }
+  &.pending {
+    color: orange;
+  }
+  &.cancelled {
+    color: red;
+  }
+  &.sent {
+    color: green;
+  }
+}

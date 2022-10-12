@@ -1,0 +1,282 @@
+.dashboard_frame {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -3rem;
+}
+
+.dashboard_frame .form_container  .selected_title {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  align-self: flex-start;
+  text-transform: capitalize;
+  margin: 2rem 0rem 1.5rem 0rem;
+  width: max-content;
+  height: 1rem;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #012a4a;
+}
+
+/* FORM STYLE */
+.form_container {
+  width: 34.5rem;
+  box-sizing: border-box;
+  margin: 2rem 0rem;
+}
+
+.dashboard_frame .form_container .form_group {
+  margin: 1rem 0;
+}
+
+.dashboard_frame .form_container .form_group .label_container .form_label {
+  width: 3.56rem;
+  height: 1rem;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  color: #012a4a;
+  text-transform: capitalize;
+}
+
+.dashboard_frame .form_container .form_group .input_container.ussd{
+  background: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #d9d9d9;
+  padding-right: 1rem;
+}
+
+.dashboard_frame .form_container .form_group .input_container.ussd .form_input{
+  border: none;
+}
+
+.dashboard_frame .form_container .form_group .input_container .form_input {
+  width: 100%;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  align-self: stretch;
+  font-family: "Inter";
+  overflow-x: scroll;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  height: 3rem;
+}
+
+.dashboard_frame
+  .form_container
+  .form_group
+  .input_container
+  .form_input.filled {
+  background: #f5f5f5;
+}
+
+.copy_icon{
+  cursor: pointer;
+}
+
+.copy_icon:hover::after{
+  content: "copy to clipboard";
+  width: 10rem;
+  display: block;
+  position: absolute;
+  right: -1rem;
+  color: green;
+}
+
+.dashboard_frame .form_container .sell_btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  width: 12.375rem;
+  height: 3rem;
+  background: linear-gradient(92.1deg, #de3d6d 55.67%, #f5844c 101.51%);
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.75rem;
+  color: #ffffff;
+  text-transform: capitalize;
+  border: none;
+  margin-top: 2.2rem;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.dashboard_frame .form_container .sell_btn:hover {
+  opacity: 1;
+}
+
+.text{
+  width: 100%;
+  height: 17px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #4285F4;
+}
+
+.notification {
+  background-color: transparent;
+  width: max-content;
+  padding: 0.5rem 1rem;
+  color: red;
+  animation: shake 0.5s ease-in-out 0s 5;
+  box-shadow: 0 0.1em 0.2em 0em red;
+}
+
+.input-error{
+  background-color: transparent;
+  width: 93%;
+  padding: 0.5rem 1rem;
+  color: red;
+  animation: shake 0.5s ease-in-out 0s 5;
+  box-shadow: 0 0.1em 0.2em 0em red;
+  display: block;
+}
+
+.error{
+  display: block;
+}
+
+@keyframes shake {
+  0% {
+    margin-left: 0rem;
+  }
+  25% {
+    margin-left: 0.5rem;
+  }
+  75% {
+    margin-left: -0.5rem;
+  }
+  100% {
+    margin-left: 0rem;
+  }
+}
+
+.loader_overlay{
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: grid;
+  place-content: center;
+  z-index: 99;
+}
+
+.loader_overlay > .loader{
+  z-index: 100;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px){
+  .dashboard_frame > .selected_title {
+    margin: -2rem 0rem -1rem -1rem;
+    height: 1rem;
+    font-size: 13px;
+  }
+
+  .dashboard_frame .form_container {
+    width: 30rem;
+    box-sizing: border-box;
+    margin: 2rem 0rem;
+  }
+  
+  .dashboard_frame .form_container .form_group {
+    margin: 1rem 0;
+  }
+}
+
+@media (max-width: 570px){
+  .dashboard_frame {
+    width: 100%;
+  }
+
+  .dashboard_frame > .selected_title {
+    margin: -2rem 0rem -1rem -1rem;
+    height: 1rem;
+    font-size: 12px;
+  }
+
+  .dashboard_frame .form_container {
+    width: 20rem;
+    box-sizing: border-box;
+    margin: 1rem 0rem;
+  }
+
+  .dashboard_frame .form_container .form_group {
+    margin: 1rem 0;
+  }
+}
+
+@media (max-width: 450px){
+  .dashboard_frame {
+    width: 100%;
+  }
+
+  .dashboard_frame > .selected_title {
+    margin: -2.5rem 0rem -2rem -1rem;
+    height: 1rem;
+    font-size: 8px;
+  }
+
+  .dashboard_frame .form_container {
+    width: 18rem;
+    box-sizing: border-box;
+    margin: 2rem 0rem;
+  }
+
+  .dashboard_frame .form_container .form_group {
+    margin: 1rem 0;
+  }
+}
+
+@media (max-width: 280px) {
+  .dashboard_frame {
+      width: 100%;
+    }
+
+  .dashboard_frame > .selected_title {
+    margin: -2.5rem 0rem -2rem -1rem;
+    height: 1rem;
+    font-size: 8px;
+  }
+
+  .dashboard_frame .form_container {
+    width: 10rem;
+    box-sizing: border-box;
+    margin: 1rem 0rem;
+  }
+
+  .dashboard_frame .form_container .form_group {
+    margin: 1rem 0;
+  }
+
+  .dashboard_frame .form_container .sell_btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    width: 10rem;
+    height: 2rem;
+  }
+}

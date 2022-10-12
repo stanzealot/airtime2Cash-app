@@ -1,0 +1,128 @@
+.showcase-container {
+  box-sizing: border-box;
+  width: 1440px;
+  max-width: 100%;
+  left: 0px;
+  top: 0px;
+  background: rgba(245, 132, 76, 0.05);
+  padding: 5%;
+
+  .showcase-hero {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 80px 0;
+  }
+  .showcase-pitch {
+    width: 760px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 80px 0;
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+    flex-shrink: 0.8;
+  
+    .showcase-heading {
+      width: 524px;
+      max-width: 100%;
+  
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      font-size: clamp(2.5rem, 5vw, 60px);
+      line-height: 1.3em;
+      margin: 0;
+  
+      background: linear-gradient(89.39deg, #DE3D6D 18.77%, #F5844C 91.68%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+
+    .showcase-description {
+      width: 508px;
+      max-width: 100%;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #03435F;
+    }
+
+    .showcase-button {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      align-self: center;
+      padding: 10px;
+      gap: 10px;
+      width: 171px;
+      height: 48px;
+      background: linear-gradient(107.45deg, #DE3D6D 47.58%, #F5844C 104.23%);
+      border-radius: 4px;
+      text-decoration: none;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+      color: #FFFFFF;
+    }
+  }
+  
+  .showcase-image {
+    min-width: min(90%, 200px);
+    max-width: 100%;
+    gap: 20px;
+    aspect-ratio: 1/1;
+    display: none;
+    flex-shrink: 0.4;
+
+    .showcase-img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      opacity: 0.9;
+      background-blend-mode: multiply;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .showcase-container {
+    padding: 80px 150px !important;
+    .showcase-hero {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      padding: 0;
+
+      .showcase-pitch {
+        text-align: left;
+        align-items: flex-start;
+
+        .showcase-button {
+          align-self: flex-start;
+        }
+      }
+
+      .showcase-image {
+        display: flex;
+      }
+    }
+  }
+}

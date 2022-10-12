@@ -1,0 +1,94 @@
+.fpcm {
+    position: absolute;
+    width: 860px;
+    height: 527px;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 90%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fpcm img{
+    left: 44.77%;
+    right: 44.77%;
+    top: 18.79%;
+    bottom: 67.55%;
+}
+
+.fpcm h1 {
+    width: 300px;
+    left: 304px;
+    top: 203px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #03435F;
+    max-width: 95%;
+    text-align: center;
+}
+
+.fpcm-text {
+    width: 319px;
+    height: 44px;
+    left: 271px;
+    top: 263px;
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #21334F;
+    max-width: 90%;
+}
+
+.fpcm-rslink {
+    width: 331px;
+    height: 20px;
+    left: 265px;
+    top: 323px;
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #012A4A;
+    max-width: 90%;
+}
+
+.fpcm-rslink a {
+    color: #012A4A;
+}
+
+.fpcm-back2login {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 204px;
+    height: 54px;
+    left: 328px;
+    top: 375px;
+    background: linear-gradient(104.22deg, #DE3D6D 38.86%, #F5844C 82.71%);
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+}

@@ -1,0 +1,56 @@
+.overlay {
+  isolation: isolate;
+  position: fixed;
+  z-index: 11;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  background: rgba(0, 0, 0, 0.2);
+
+  .optionModal {
+    position: absolute;
+    z-index: 12;
+    isolation: isolate;
+    width: 562px;
+    max-width: 90%;
+    height: 382px;
+    min-height: 332px;
+    max-height: 100vh;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    margin: auto;
+    background: #FFFFFF;
+
+    .modalHeading {
+      box-sizing: border-box;
+      border-bottom: 1px solid #D9D9D9;
+      padding: 20px;
+      height: 59px;
+      margin: 0;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+      color: #012A4A;
+    }
+
+    .modalForm {
+      display: flex;
+      flex-shrink: 1;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      gap: 32px;
+      margin: 0 auto;
+      margin-top: 33px;
+      max-width: 90%;
+
+      .buttonComponent {
+        width: 198px;
+        margin: auto;
+      }
+    }
+  }
+}
